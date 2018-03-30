@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto:400,700" rel="stylesheet">
-  <link rel="shortcut icon" href="http://res.cloudinary.com/madlicorice/image/upload/v1520448614/WeGot-favicon.ico">
+  <link rel="shortcut icon" href="https://i.imgur.com/9XMiEwe.png">
   <title>WeGot</title>
 </head>
 <body>
@@ -14,10 +14,35 @@
     <div id="sidebar-app"></div>
   </div>
   <div id="recommendations-app"></div>
-
-  <!-- <script src="gallery/bundle.js"></script>
+  <script src="./lib/react.development.js"></script>
+  <script src="./lib/react-dom.development.js"></script>
+  <!-- <script src="http://localhost:3001/app.js"></script>
+  <script src="http://localhost:3002/app.js"></script>
+  <script src="http://localhost:3003/app.js"></script> -->
+  <script src="http://localhost:3004/app.js"></script>
+  <script>
+    // CHECK SPELLING OF MICROSERVICES. Rename each MS from app on index.jsx?
+    // ReactDOM.render(
+    //   React.createElement(Gallery),
+    //   document.getElementById('Gallery')
+    // );
+    // ReactDOM.render(
+    //   React.createElement(Overview),
+    //   document.getElementById('Overview')
+    // );
+    // ReactDOM.render(
+    //   React.createElement(Sidebar),
+    //   document.getElementById('Sidebar')
+    // );
+    ReactDOM.render(
+      React.createElement(Recommendations),
+      document.getElementById('recommendations-app')
+    );
+  </script>
+  <!-- legacy bundle sources
+  <script src="gallery/bundle.js"></script>
   <script src="overview/bundle.js"></script>
-  <script src="sidebar/bundle.js"></script> -->
-  <script src="recommendations/bundle.js"></script>
+  <script src="sidebar/bundle.js"></script>
+  <script src="recommendations/bundle.js"></script> -->
 </body>
 </html>

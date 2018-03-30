@@ -1,0 +1,27 @@
+lib folder in public
+empty client folder w/ gitkeep file, fred's has it in services
+templates folder
+loader.js
+server.jsserver-config.json
+
+
+Steps
+downloaded lib folder
+changed app name in global namespace for ms index.html and proxy index.html
+updated proxy index.html with react/reactdom sources, rendering script, MS bundle sources
+
+
+in service-config.json
+  // "Gallery": "http://localhost:3001/app",
+  // "Overview": "http://localhost:3002/app",
+  // "Sidebar": "http://localhost:3003/app",
+
+in templates/app.js
+  Gallery, Overview, Sidebar, 
+
+    <div id="Gallery">${Gallery}</div>
+  <div id="Overview">${Overview}</div>
+  <div id="Sidebar">${Sidebar}</div>
+
+
+Moved server.js down into server folder
